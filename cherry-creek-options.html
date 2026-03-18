@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cherry Creek Office Space Showdown &mdash; 7 Properties Ranked</title>
+    <title>Cherry Creek Office Space Showdown &mdash; 12 Properties Compared</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -141,6 +141,25 @@
         /* Responsive */
         @media (max-width: 768px) { .header { padding: 32px 20px 24px; } .header h1 { font-size: 22px; } .summary-bar { padding: 12px 20px; gap: 16px; } .container { padding: 20px 12px 32px; } #map { height: 320px; } }
 
+        /* Round 2 accent */
+        .round2-accent { color: #0d9488; }
+        .round2-divider { margin: 56px 0 32px; padding: 32px 0 0; border-top: 3px solid #0d9488; }
+        .round2-divider .section-title::before { background: #0d9488; }
+        .round2-subtitle { font-size: 14px; color: #5a6a7e; margin: -10px 0 24px 14px; }
+        .round2-badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 10px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; background: #0d9488; color: #fff; vertical-align: middle; margin-left: 8px; }
+        .round2-table thead th { background: #0f766e; }
+        .round2-table thead th:hover { background: #115e59; }
+        .round2-card { border-left: 4px solid #0d9488 !important; }
+        .round2-card h3 .round2-letter { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #0d9488; color: #fff; font-weight: 700; font-size: 11px; margin-right: 6px; }
+        .round2-marker { background: #0d9488 !important; }
+        .round2-marker:hover, .round2-marker.active { background: #14b8a6 !important; }
+
+        /* Map legend */
+        .map-legend { position: absolute; bottom: 12px; left: 12px; background: rgba(255,255,255,0.95); border-radius: 8px; padding: 10px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 1000; font-size: 12px; line-height: 1.8; }
+        .map-legend-title { font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #1a2744; margin-bottom: 4px; }
+        .map-legend-item { display: flex; align-items: center; gap: 8px; }
+        .map-legend-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.2); flex-shrink: 0; }
+
         /* Print */
         @media print { body { background: #fff; } .header { background: #1a2744 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; } .property-details { break-inside: avoid; } .property-details[open] .detail-body { display: block !important; } }
     </style>
@@ -149,11 +168,11 @@
 
 <div class="header">
     <h1>Cherry Creek Executive Office Showdown</h1>
-    <div class="subtitle">7 Properties Ranked &mdash; March 2026 &mdash; Denver, Colorado</div>
+    <div class="subtitle">7 Ranked + 5 New Options &mdash; March 2026 &mdash; Denver, Colorado</div>
 </div>
 
 <div class="summary-bar">
-    <div class="summary-item"><strong>7</strong> Properties Ranked</div>
+    <div class="summary-item"><strong>7</strong> Ranked &middot; <strong style="color:#0d9488">5 New</strong> Under Review</div>
     <div class="summary-item"><strong>Cherry Creek</strong> &mdash; Denver's Premier Submarket</div>
     <div class="summary-item"><strong>6&ndash;8%</strong> Vacancy (vs 35%+ Downtown)</div>
     <div class="summary-item"><strong>Walk Scores 87&ndash;94</strong></div>
@@ -663,10 +682,286 @@
         </ul>
     </div>
 
+    <!-- ============================= -->
+    <!-- ROUND 2 - NEW PROPERTIES       -->
+    <!-- ============================= -->
+    <div class="round2-divider">
+        <div class="section-title">Round 2 &mdash; New Properties Under Consideration</div>
+        <div class="round2-subtitle">5 additional options identified by broker. Not yet toured or scored. <span class="round2-badge">Round 2</span></div>
+    </div>
+
+    <!-- ROUND 2: QUICK COMPARISON TABLE -->
+    <div class="table-wrapper" style="margin-bottom:40px;">
+        <table class="round2-table" style="min-width:1100px; font-size:13px;">
+            <thead>
+                <tr>
+                    <th style="width:50px;">&nbsp;</th>
+                    <th>Property</th>
+                    <th>Best-Fit Suite</th>
+                    <th>Class</th>
+                    <th>Rent</th>
+                    <th>Parking</th>
+                    <th>Offices</th>
+                    <th>Key Amenities</th>
+                    <th>Walk Score</th>
+                    <th>Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- A: 501 S Cherry St -->
+                <tr>
+                    <td><span class="round2-letter" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#0d9488;color:#fff;font-weight:700;font-size:13px;">A</span></td>
+                    <td>
+                        <div class="address-name">501 S Cherry St, Ste 300 <span class="round2-badge">Round 2</span></div>
+                        <div class="building-name">One Cherry Center (DPC Companies) &mdash; Glendale, 80246</div>
+                    </td>
+                    <td>4,977 SF<br><span style="font-size:11px;color:#7a8a9e">11-story, 156k SF bldg</span></td>
+                    <td><span class="badge badge-a">A</span><br><span style="font-size:10px;color:#999">1985 / 92% leased</span></td>
+                    <td><strong>$33</strong>/SF<br><span style="font-size:10.5px;color:#28a745;font-weight:600">Full-service!</span></td>
+                    <td>3:1,000<br><span style="font-size:10.5px;color:#7a8a9e">14 spots, 4-level garage</span></td>
+                    <td><strong>9</strong></td>
+                    <td>
+                        <span class="tag">Fitness + Showers</span>
+                        <span class="tag">Granite Lobby</span>
+                        <span class="tag">Outdoor Plaza</span>
+                        <span class="tag">CC Trail Access</span>
+                    </td>
+                    <td><strong>85</strong></td>
+                    <td>Now</td>
+                </tr>
+
+                <!-- B: 3773 Cherry Creek N Dr -->
+                <tr>
+                    <td><span class="round2-letter" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#0d9488;color:#fff;font-weight:700;font-size:13px;">B</span></td>
+                    <td>
+                        <div class="address-name">3773 Cherry Creek N Dr <span class="round2-badge">Round 2</span></div>
+                        <div class="building-name">Ptarmigan at Cherry Creek (Hamilton-Titan) &mdash; Denver, 80209</div>
+                    </td>
+                    <td>Suite 670: 4,273 SF<br><span style="font-size:11px;color:#7a8a9e">Also: 917 sublet (3,165 SF @ $27)</span></td>
+                    <td><span class="badge badge-a">A</span><br><span style="font-size:10px;color:#999">1982 / LEED Silver</span></td>
+                    <td><strong>$33</strong>/SF direct<br><span style="font-size:10.5px;color:#0d9488;font-weight:600">$27/SF sublease</span></td>
+                    <td>3.3:1,000<br><span style="font-size:10.5px;color:#7a8a9e">Covered $90/mo</span></td>
+                    <td><strong>9</strong><br><span style="font-size:10.5px;color:#7a8a9e">(Ste 917)</span></td>
+                    <td>
+                        <span class="tag">Fitness + Showers</span>
+                        <span class="tag">DazBog Cafe</span>
+                        <span class="tag">LEED Silver</span>
+                        <span class="tag">Mtn Views</span>
+                        <span class="tag">Bike Score 95</span>
+                    </td>
+                    <td><strong>77</strong></td>
+                    <td>Ste 670: Jun 2026<br><span style="font-size:10.5px;color:#7a8a9e">Ste 917: Now</span></td>
+                </tr>
+
+                <!-- C: 101 University Blvd -->
+                <tr>
+                    <td><span class="round2-letter" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#0d9488;color:#fff;font-weight:700;font-size:13px;">C</span></td>
+                    <td>
+                        <div class="address-name">101 University Blvd, Ste 200 <span class="round2-badge">Round 2</span></div>
+                        <div class="building-name">101 University Cherry Creek (MDC/Nicola Wealth) &mdash; Denver, 80206</div>
+                    </td>
+                    <td>5,025 SF<br><span style="font-size:11px;color:#7a8a9e">Can demise (Ste 210: 2,402 SF)</span></td>
+                    <td><span class="badge badge-a">A</span><br><span style="font-size:10px;color:#999">1970 / reno 2012-18</span></td>
+                    <td><strong>$39</strong>/SF<br><span style="font-size:10.5px;color:#7a8a9e">Base (NNN TBD)</span></td>
+                    <td>~3:1,000<br><span style="font-size:10.5px;color:#7a8a9e">Attached garage</span></td>
+                    <td><strong>8</strong></td>
+                    <td>
+                        <span class="tag">Demisable Suites</span>
+                        <span class="tag">Fidelity Investments</span>
+                        <span class="tag">CC North Gateway</span>
+                    </td>
+                    <td><strong>94</strong></td>
+                    <td>Now</td>
+                </tr>
+
+                <!-- D: 425 S Cherry St (The Forum) -->
+                <tr>
+                    <td><span class="round2-letter" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#0d9488;color:#fff;font-weight:700;font-size:13px;">D</span></td>
+                    <td>
+                        <div class="address-name">425 S Cherry St <span class="round2-badge">Round 2</span></div>
+                        <div class="building-name">The Forum at Cherry Creek (CentrePoint Properties) &mdash; Glendale, 80246</div>
+                    </td>
+                    <td>Ste 630: 3,059 SF<br><span style="font-size:11px;color:#7a8a9e">Also: Ste 300 (5,566 SF)</span></td>
+                    <td><span class="badge badge-b">B</span><br><span style="font-size:10px;color:#999">1981 / reno 2019+</span></td>
+                    <td><strong>$28&ndash;30</strong>/SF<br><span style="font-size:10.5px;color:#e67e22">+ $13.83 NNN</span></td>
+                    <td>3.8:1,000<br><span style="font-size:10.5px;color:#7a8a9e">Covered garage</span></td>
+                    <td><strong>6&ndash;9</strong></td>
+                    <td>
+                        <span class="tag">Coffee Bar + Lounge</span>
+                        <span class="tag">Outdoor Patio</span>
+                        <span class="tag">Bike Rental</span>
+                        <span class="tag">10 Stories</span>
+                    </td>
+                    <td><strong>83</strong></td>
+                    <td>Now</td>
+                </tr>
+
+                <!-- E: 210 University Blvd -->
+                <tr>
+                    <td><span class="round2-letter" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#0d9488;color:#fff;font-weight:700;font-size:13px;">E</span></td>
+                    <td>
+                        <div class="address-name">210 University Blvd <span class="round2-badge">Round 2</span></div>
+                        <div class="building-name">210 University (Corum/Koch Real Estate) &mdash; Denver, 80206</div>
+                    </td>
+                    <td>Ste 220: 4,971 SF<br><span style="font-size:11px;color:#7a8a9e">Also: Ste 77 (4,122 SF, 4 offices)</span></td>
+                    <td><span class="badge badge-b">B</span><br><span style="font-size:10px;color:#999">1979 / reno ongoing</span></td>
+                    <td><strong>$44</strong>/SF<br><span style="font-size:10.5px;color:#e67e22">+ $17.38 NNN</span></td>
+                    <td>3:1,000<br><span style="font-size:10.5px;color:#7a8a9e">$100&ndash;135/mo</span></td>
+                    <td><strong>11</strong></td>
+                    <td>
+                        <span class="tag">Fitness Center</span>
+                        <span class="tag">Energy Star</span>
+                        <span class="tag">Tryba Architects Reno</span>
+                        <span class="tag">Stepped Terraces</span>
+                        <span class="tag">Mtn + Downtown Views</span>
+                    </td>
+                    <td><strong>90</strong></td>
+                    <td>Now</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ROUND 2: QUICK INSIGHT CARDS -->
+    <div class="section-title" style="margin-top:0;">Round 2 &mdash; Quick Takes</div>
+    <div class="round2-subtitle">First impressions based on broker materials and research. Scores pending tour.</div>
+    <div class="picks-grid">
+        <div class="card round2-card">
+            <h3><span class="round2-letter">A</span> 501 S Cherry St &mdash; One Cherry Center</h3>
+            <ul>
+                <li>Class A, 11-story building (1985, renovated 2015+). 92% leased &mdash; healthy occupancy.</li>
+                <li>4,977 SF with 9 offices + 14 parking spots &mdash; right-sized for 10-person team</li>
+                <li><strong>$33/SF full-service</strong> &mdash; this is the best value in the entire 12-property set (includes operating expenses)</li>
+                <li>Renovated fitness center with showers/lockers, dual granite lobbies, outdoor plaza + pavilion</li>
+                <li>Direct access to Cherry Creek Trail (40-mile bike path). Bike Score 86.</li>
+                <li>Owner DPC Companies invested heavily post-2015: new lobbies, fitness, MERV 13 air filtration</li>
+                <li><strong>Watch:</strong> Technically in Glendale, not Denver &mdash; slightly south of core Cherry Creek</li>
+            </ul>
+        </div>
+        <div class="card round2-card">
+            <h3><span class="round2-letter">B</span> 3773 Cherry Creek N Dr &mdash; Ptarmigan at Cherry Creek</h3>
+            <ul>
+                <li>Two 10-story copper-facade Class A towers (1982, LEED Silver). 435k SF total campus.</li>
+                <li>10+ suites available (3,100&ndash;5,800 SF) &mdash; maximum flexibility on floor/size</li>
+                <li>Suite 917 sublease at $27/SF is the cheapest rent in the entire 12-property set</li>
+                <li>Real amenities: fitness center with showers/lockers, DazBog cafe, Zoom-equipped conf room</li>
+                <li>Bike Score 95 (&quot;Biker's Paradise&quot;) &mdash; near Cherry Creek Trail. Covered parking $90/mo.</li>
+                <li><strong>Leverage:</strong> ~64% vacancy across the complex &mdash; significant negotiating power</li>
+                <li><strong>Watch:</strong> Walk Score 77 (lowest of all 12) &mdash; set back from retail/restaurant core</li>
+                <li><strong>Watch:</strong> Sublease (Ste 917) expires July 2027 &mdash; only 13 months of term</li>
+            </ul>
+        </div>
+        <div class="card round2-card">
+            <h3><span class="round2-letter">C</span> 101 University Blvd &mdash; Cherry Creek Gateway</h3>
+            <ul>
+                <li>Boutique Class A (owner-marketed). Renovated 2012-2018: new lobby, elevators, restrooms.</li>
+                <li>5,025 SF with 8 offices. Fidelity Investments and Busey Bank as co-tenants.</li>
+                <li>Suites 200 + 210 currently combined but can be demised to ~2,400 SF later</li>
+                <li>Walk Score <strong>94</strong> &mdash; highest of all Round 2 properties, tied for highest overall</li>
+                <li>Purchased for $26M in 2019 (MDC/Nicola Wealth) &mdash; institutional ownership</li>
+                <li><strong>Watch:</strong> 1970 vintage &mdash; oldest building in the entire set despite renovations</li>
+                <li><strong>Watch:</strong> Only 4 stories &mdash; no mountain views, limited prestige</li>
+            </ul>
+        </div>
+        <div class="card round2-card">
+            <h3><span class="round2-letter">D</span> 425 S Cherry St &mdash; The Forum at Cherry Creek</h3>
+            <ul>
+                <li>10-story building, renovated 2019+ by CentrePoint Properties: new lobby, elevators, coffee bar, outdoor patio</li>
+                <li>Suite 630 (3,059 SF, 6 offices) or Suite 300 (5,566 SF, 9 offices) &mdash; two size options</li>
+                <li>Best parking ratio of any property at 3.8:1,000 &mdash; covered garage, 30 sec walk to door</li>
+                <li>All-in rent $41&ndash;44/SF ($28&ndash;30 base + $13.83 NNN). Rents reportedly 30% below market at acquisition.</li>
+                <li><strong>Watch:</strong> ~40% medical/dental tenants &mdash; similar concern to 3300 E 1st Ave (Key Bank Plaza)</li>
+                <li><strong>Watch:</strong> Glendale address, not Denver &mdash; same as 501 S Cherry</li>
+                <li><strong>Watch:</strong> Suite 630 has only 6 offices &mdash; may be tight for 10 people</li>
+            </ul>
+        </div>
+        <div class="card round2-card">
+            <h3><span class="round2-letter">E</span> 210 University Blvd &mdash; Corum/Koch Boutique Repositioning</h3>
+            <ul>
+                <li>Suite 220 (4,971 SF, 11 offices) &mdash; most private offices of any property in the entire set</li>
+                <li>$67.7M acquisition (Corum/Koch, 2022). Tryba Architects redesigning as boutique workplace.</li>
+                <li>New biophilic design with stepped terraces on every floor &mdash; unique outdoor amenity</li>
+                <li>Walk Score 90. Views of downtown Denver (north) and Rocky Mountains (west) from upper floors.</li>
+                <li>U.S. Bank anchor tenant renewed at $68.55/SF &mdash; institutional commitment to building</li>
+                <li><strong>Watch:</strong> All-in rent $61.38/SF ($44 + $17.38 NNN) &mdash; second most expensive after 100 Fillmore</li>
+                <li><strong>Watch:</strong> Suite 77 (4,122 SF) has only 4 offices &mdash; ask if layout can be modified</li>
+                <li><strong>Watch:</strong> Ongoing construction &mdash; confirm timeline and disruption level on tour</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ROUND 2: RENT COMPARISON CALLOUT -->
+    <div class="card" style="border-left:4px solid #0d9488; margin-bottom:32px;">
+        <h3 style="color:#0d9488;">&#128176; Round 2 Rent Comparison (Normalized)</h3>
+        <ul>
+            <li><strong>Cheapest sublease:</strong> 3773 Cherry Creek N Dr, Ste 917 &mdash; $27/SF (NNN TBD, sublease may be gross)</li>
+            <li><strong>Best value full-service:</strong> 501 S Cherry St &mdash; $33/SF full-service (Class A, includes OpEx!) &mdash; best deal in all 12</li>
+            <li><strong>Mid-range:</strong> 101 University Blvd ($39/SF + NNN TBD), 425 S Cherry St ($41&ndash;44/SF all-in)</li>
+            <li><strong>Premium:</strong> 210 University Blvd &mdash; $61.38/SF all-in (Ste 220) &mdash; nearly as expensive as 100 Fillmore</li>
+            <li><strong>Key gap:</strong> NNN costs not yet disclosed for 101 University &mdash; request from broker before comparing</li>
+        </ul>
+    </div>
+
+    <!-- ROUND 2: VERIFICATION ITEMS -->
+    <div class="red-flags" style="border-left-color:#0d9488; margin-bottom:32px;">
+        <h3 style="color:#0d9488;">&#128269; Round 2 &mdash; Items to Verify on Tour</h3>
+
+        <div class="rf-property">
+            <h4>501 S Cherry St (One Cherry Center)</h4>
+            <ul>
+                <li>Confirm $33/SF is truly full-service (research says yes, NNN of $12.45 included)</li>
+                <li>14 parking spots at 3:1,000 &mdash; confirm these are included and monthly cost</li>
+                <li>Suite 300 condition: is it a move-in-ready spec suite or needs buildout?</li>
+                <li>Glendale vs Denver mailing address &mdash; does it matter for branding?</li>
+                <li>Suite not on building website (onecherrycenter.com) &mdash; confirm still available</li>
+            </ul>
+        </div>
+
+        <div class="rf-property">
+            <h4>3773 Cherry Creek N Dr (Ptarmigan)</h4>
+            <ul>
+                <li>Suite 670 available June 2026 &mdash; confirm this aligns with your timeline</li>
+                <li>Suite 917 sublease expires July 2027 &mdash; only 13 months of term remaining. What happens after?</li>
+                <li>NNN costs for direct leases ($33&ndash;34/SF) not disclosed &mdash; request from broker</li>
+                <li>Walk Score 77 is lowest in set &mdash; evaluate walkability to lunch/amenities on tour</li>
+                <li>Regus coworking in building &mdash; is that a positive (overflow) or negative (foot traffic)?</li>
+            </ul>
+        </div>
+
+        <div class="rf-property">
+            <h4>101 University Blvd</h4>
+            <ul>
+                <li>1970 vintage &mdash; assess modernization level and HVAC quality on tour</li>
+                <li>Can Suite 200 (5,025 SF) be demised independently from Suite 210? Confirm with broker.</li>
+                <li>NNN costs not disclosed &mdash; critical for total cost comparison</li>
+                <li>Only 4 stories &mdash; limited ceiling on prestige and views</li>
+            </ul>
+        </div>
+
+        <div class="rf-property">
+            <h4>425 S Cherry St (The Forum)</h4>
+            <ul>
+                <li>Suite 630 (3,059 SF) has only 6 offices &mdash; confirm layout supports 10 people</li>
+                <li>1981 Class B building in Glendale &mdash; evaluate condition and curb appeal on tour</li>
+                <li>3.8:1,000 parking is best ratio in entire set &mdash; confirm cost per space</li>
+            </ul>
+        </div>
+
+        <div class="rf-property">
+            <h4>210 University Blvd (U.S. Bank Building)</h4>
+            <ul>
+                <li>$61.38/SF all-in for Ste 220 is very expensive &mdash; is there room to negotiate?</li>
+                <li>Suite 77 at $42.38/SF has only 4 offices &mdash; ask if layout can be modified</li>
+                <li>Boutique repositioning underway &mdash; what stage? Will there be construction disruption?</li>
+                <li>Confirm fitness center access is included in rent vs. separate membership</li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 
 <div class="footer">
-    Cherry Creek Executive Office Showdown &mdash; 7 Properties Ranked &mdash; March 2026 &mdash; Denver, Colorado
+    Cherry Creek Executive Office Showdown &mdash; 12 Properties Compared &mdash; March 2026 &mdash; Denver, Colorado
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -681,12 +976,22 @@
         { id: 7, name: '240 St Paul St (Equinox)', rank: 1, lat: 39.720169, lng: -104.950577, sf: '4,756 RSF', cls: 'AA', type: 'Sublease', highlight: '#1 &mdash; Class AA, furnished, valet, Walk Score 90. No gym despite name.', views: 'TBD', score: '7.7' }
     ];
 
-    const map = L.map('map').setView([39.7180, -104.9505], 16);
+    // Round 2 properties
+    const round2Properties = [
+        { letter: 'A', name: '501 S Cherry St (One Cherry Center)', lat: 39.7074, lng: -104.9335, sf: '4,977 SF (Ste 300), 9 offices, 14 parking', cls: 'A', rent: '$33/SF full-service', highlight: 'Best value in set! $33/SF full-service, Class A (1985, reno 2015+), fitness+showers, 92% leased. Glendale.' },
+        { letter: 'B', name: '3773 Cherry Creek N Dr (Ptarmigan)', lat: 39.7089, lng: -104.9423, sf: '4,273 SF (Ste 670) or 3,165 SF sublease (Ste 917)', cls: 'A (LEED Silver)', rent: '$27&ndash;33/SF', highlight: 'Twin copper-facade towers (1982). Fitness, DazBog cafe, Bike Score 95. ~64% vacant = leverage. Cheapest sublease at $27/SF.' },
+        { letter: 'C', name: '101 University Blvd', lat: 39.7189, lng: -104.9598, sf: '5,025 SF (Ste 200), 8 offices', cls: 'A (boutique)', rent: '$39/SF base', highlight: 'Walk Score 94 (highest R2). Reno 2012-18. Fidelity co-tenant. Demisable to 2,402 SF.' },
+        { letter: 'D', name: '425 S Cherry St (The Forum)', lat: 39.7091, lng: -104.9335, sf: '3,059 SF (Ste 630) or 5,566 SF (Ste 300)', cls: 'B', rent: '$41&ndash;44/SF all-in', highlight: '10-story, reno 2019+. Best parking (3.8:1,000). Coffee bar, patio, bike rental. ~40% medical tenants.' },
+        { letter: 'E', name: '210 University Blvd (Corum/Koch)', lat: 39.7188, lng: -104.9597, sf: '4,971 SF (Ste 220), 11 offices', cls: 'B &rarr; A reno', rent: '$44 + $17.38 NNN', highlight: 'Tryba Architects boutique reno. Stepped terraces, mtn+downtown views. Walk Score 90. 11 offices.' }
+    ];
+
+    const map = L.map('map').setView([39.7140, -104.9470], 14);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors', maxZoom: 19 }).addTo(map);
 
     const markers = {};
     const rankColors = { 1: '#c9a227', 2: '#7a8a9e', 3: '#a0703c' };
 
+    // Round 1 markers
     properties.forEach(p => {
         const bg = rankColors[p.rank] || '#1a2744';
         const icon = L.divIcon({
@@ -709,6 +1014,41 @@
         marker.on('click', () => highlightRow(p.id));
         markers[p.id] = marker;
     });
+
+    // Round 2 markers (teal)
+    round2Properties.forEach(p => {
+        const icon = L.divIcon({
+            className: '',
+            html: `<div class="map-marker round2-marker">${p.letter}</div>`,
+            iconSize: [32, 32], iconAnchor: [16, 16], popupAnchor: [0, -20]
+        });
+
+        const marker = L.marker([p.lat, p.lng], { icon }).addTo(map);
+        marker.bindPopup(`
+            <div class="popup-content">
+                <h4 style="color:#0d9488;">${p.letter} &mdash; ${p.name} <span style="font-size:10px;background:#0d9488;color:#fff;padding:2px 6px;border-radius:10px;margin-left:4px;">ROUND 2</span></h4>
+                <p><span class="popup-highlight">${p.sf}</span> &middot; Class ${p.cls}</p>
+                <p>Rent: <strong>${p.rent}</strong></p>
+                <p style="margin-top:6px;font-style:italic;">${p.highlight}</p>
+            </div>
+        `, { maxWidth: 320 });
+    });
+
+    // Map legend
+    const legend = L.control({ position: 'bottomleft' });
+    legend.onAdd = function() {
+        const div = L.DomUtil.create('div', 'map-legend');
+        div.innerHTML = `
+            <div class="map-legend-title">Map Legend</div>
+            <div class="map-legend-item"><div class="map-legend-dot" style="background:#c9a227"></div> #1 Gold</div>
+            <div class="map-legend-item"><div class="map-legend-dot" style="background:#7a8a9e"></div> #2 Silver</div>
+            <div class="map-legend-item"><div class="map-legend-dot" style="background:#a0703c"></div> #3 Bronze</div>
+            <div class="map-legend-item"><div class="map-legend-dot" style="background:#1a2744"></div> #5&ndash;7 Navy</div>
+            <div class="map-legend-item"><div class="map-legend-dot" style="background:#0d9488"></div> <strong>Round 2 (A&ndash;E)</strong></div>
+        `;
+        return div;
+    };
+    legend.addTo(map);
 
     function panToMarker(id) {
         const p = properties.find(x => x.id === id);
